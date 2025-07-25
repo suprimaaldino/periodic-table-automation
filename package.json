@@ -6,7 +6,7 @@
     "test": "playwright test",
     "lint": "commitlint --from=HEAD~1",
     "prepare": "husky",
-    "cz": "git-cz"
+    "commit": "git-cz"
   },
   "keywords": [],
   "author": "",
