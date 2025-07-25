@@ -2,14 +2,22 @@
   "name": "periodic-table-automation",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "lint": "commitlint --from=HEAD~1",
+    "prepare": "husky",
+    "commit": "git commit -m 'chore: update package.json'"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@playwright/test": "^1.54.1",
-    "@types/node": "^24.1.0"
+    "@types/node": "^24.1.0",
+    "husky": "^9.1.7"
   },
   "dependencies": {
     "playwright": "^1.54.1"
